@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Angular Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row row-content"
+           ng-init="
+               dishList= [
+	               {
+	                   name: 'Uthapizza',
+	                   image: 'gallery/uthapizza.png',
+	                   category: 'main',
+	                   label: 'Hot',
+	                   price: '4.99',
+	                   description: 'A unique combination',
+	                   comment: ''
+	               },
+	               {
+	                   name: 'Vadonut',
+	                   image: 'gallery/vadonut.png',
+	                   category: 'appetizer',
+	                   label: 'Hot',
+	                   price: '4.99',
+	                   description: '¿Is it a vada or is it a donut?',
+	                   comment: ''
+	               },
+	               {
+	                   name: 'Elai Cheese Cake',
+	                   image: 'gallery/CheeseCake.png',
+	                   category: 'appetizer',
+	                   label: 'New',
+	                   price: '1.99',
+	                   description: 'Deep fried Zucchini',
+	                   comment: ''
+	               }
+               ]
+           "
+        >
+            <div class="col-xs-12">
+                <ul class="media-list">
+	                <li class="media" ng-repeat="dish in dishList">
+	                    <div class="media-left media-middle">
+	                        <a href="#"><img class="media-object img-thumbnail" ng-src={{dish.image}} alt="Uthapizza"></img></a>
+	                    </div>
+		                <div class="media-body">
+		                    <h2 class="media-heading">{{dish.name}}
+		                        <span class="label label-danger label-xs">{{dish.label}}</span>
+		                        <span class="badge">{{dish.price | currency}}</span>
+		                    </h2>
+		                    <p>{{dish.description}}</p>
+		                    <p>Comment: {{dish.comment}}</p>
+		                    <p>Type your comment: <input type="text" ng-model="dish.comment" /> </p>
+		                    <!-- Angular Two way data binding -->
+		                </div>
+	                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row row-content" ng-controller="menuController as menuCtrl">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js">
+        var app= angular.module('confusionApp',[]);
+     // Creating a controller.   
+        app.controller ('menuController',
+         // This function implements the controller behavior.
+        	function() {
+        	}
+        );
+    </script>
+</body>
+</html>

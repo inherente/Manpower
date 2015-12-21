@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>App Hello here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js" ></script>
+</head>
+<body>
+    <H1>Welcome</H1>
+    <div ng-app ng-init="qty=1;cost=1">
+        <b>Invoice</b>
+        <H2>Quqntity:</H2> <input type="number" min="0" ng-model="qty" />
+        <H2>Cost(co):</H2> <input type="number" min="0" ng-model="cost" />
+        <H2>Total: </H2><b>{{qty * cost | currency}}</b>
+    </div>
+</body>
+</html>

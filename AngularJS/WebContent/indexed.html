@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="confusionApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Angular Project</title>
+    <!--  It is important to import angular this way -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="StyleProvider/myStyle.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <div class="container">
+        <!-- The controller created below will be the controller for this div -->
+        <div class="row row-content" ng-controller="menuController as menuCtrl" >
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs" role="tablist">
+                    <!-- If "true" is present after the "active:" keyword then it would result in the active class being applied to the item list -->
+                    <li role="presenation" ng-class="{active:menuCtlr.isSelected(1)}">
+                        <a ng-click="menuCtrl.select(1);" aria-controls="all menu" role="tab">The Menu</a>
+                    </li>
+                    <li role="presenation">
+                        <a ng-click="menuCtrl.select(2);" aria-controls="appetizers" role="tab">Appetizers</a>
+                    </li>
+                    <li role="mains">
+                        <a ng-click="menuCtrl.select(3);" aria-controls="mains" role="tab">Mains</a>
+                    </li>
+                    <li role="desserts">
+                        <a ng-click="menuCtrl.select(4);" aria-controls="deserts" role="tab">Desserts</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <ul class="media-list tab-pane fade in active">
+                        <li class="media" ng-repeat="dish in menuCtrl.dishList">
+                        	<div class="media-left media-middle">
+                        	    <a href="#"><img class="media-object img-thumbnail" ng-src={{dish.image}} alt="Uthapizza"></img></a>
+                        	</div>
+                        	<div class="media-body">
+                        	    <h2 class="media-heading">{{dish.name}}
+                        	        <span class="label label-danger label-xs">{{dish.label}}</span>
+                        	        <span class="badge">{{dish.price | currency}}</span>
+                        	    </h2>
+                        	    <p>{{dish.description}}</p>
+                        	</div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="media-list">
+	                <li class="media" ng-repeat="dish in menuCtrl.dishList">
+	                    <div class="media-left media-middle">
+	                        <a href="#"><img class="media-object img-thumbnail" ng-src={{dish.image}} alt="Uthapizza"></img></a>
+	                    </div>
+		                <div class="media-body">
+		                    <h2 class="media-heading">{{dish.name}}
+		                        <span class="label label-danger label-xs">{{dish.label}}</span>
+		                        <span class="badge">{{dish.price | currency}}</span>
+		                    </h2>
+		                    <p>{{dish.description}}</p>
+		                    <!-- Comment: {{dish.comment}} -->
+		                    <!-- Type your comment: <input type="text" ng-model="dish.comment" -->
+		                    <!-- Angular Two way data binding -->
+		                </div>
+	                </li>
+                </ul>
+            </div>
+            <div>
+                <!-- {{"Hello AngularJS World"}} -->
+            </div>            
+        </div>
+        <!-- div class="row row-content" ng-controller="menuController as menuCtrl" -->
+    </div>
+    <script >
+     // Creating Angular module.
+        var app = angular.module('confusionApp',[]);
+     // Creating a controller.   
+        app.controller ('menuController',
+         // This function implements the controller behavior.
+        	function() {
+        	    this.tab= 1;
+        	    this.dishList = [
+    	            {
+    	                name: 'Uthapizza',
+    	                image: 'gallery/uthapizza.png',
+    	                category: 'main',
+    	                label: 'Hot',
+    	                price: '4.99',
+    	                description: 'A unique combination',
+    	                comment: ''
+    	            },
+    	            {
+    	                name: 'Vadonut',
+    	                image: 'gallery/vadonut.png',
+    	                category: 'appetizer',
+    	                label: 'Hot',
+    	                price: '4.99',
+    	                description: '¿Is it a vada or is it a donut?',
+    	                comment: ''
+    	            },
+    	            {
+    	                name: 'Elai Cheese Cake',
+    	                image: 'gallery/CheeseCake.png',
+    	                category: 'appetizer',
+    	                label: 'New',
+    	                price: '1.99',
+    	                description: 'Deep fried Zucchini',
+    	                comment: ''
+    	            }
+                ];
+        	 // this.dishList= dishList; // Doing this will make the dishList var abailable into the HMLT code later.
+        	    this.select = function (setTab) {
+        		    this.tab= setTab;
+        		}
+        	    this.isSelected = function (setTab) {
+        	     //	var testResult= false;
+        	    	return (this.tab === setTab); 
+        		 // if (this.tab= setTab) {testResult= true;} else {testResult = false;}return testResult;
+        		}
+            }
+        );
+    </script>
+</body>
+</html>
