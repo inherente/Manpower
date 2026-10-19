@@ -1,0 +1,1905 @@
+[10-Oct-2026 19:31:47 UTC] PHP Warning:  require_once(/home/u976796130/domains/cerezasanta.com/public_html/api/finance/Parser/BankNotificationParser.php): Failed to open stream: No such file or directory in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php on line 12
+[10-Oct-2026 19:31:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u976796130/domains/cerezasanta.com/public_html/api/finance/Parser/BankNotificationParser.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php on line 12
+[10-Oct-2026 19:36:51 UTC] PHP Warning:  Undefined array key "dbhost" in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php on line 74
+[10-Oct-2026 19:36:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u976796130_cherry'@'localhost' (using password: YES) in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php:74
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php(74): mysqli->__construct()
+#1 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php on line 74
+[10-Oct-2026 19:40:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u976796130_cherry'@'localhost' (using password: YES) in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php:74
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php(74): mysqli->__construct()
+#1 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php on line 74
+[10-Oct-2026 19:42:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u976796130_cherry'@'localhost' (using password: YES) in /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php:17
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php(17): mysqli->__construct()
+#1 /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php(70): HookEventDAO->__construct()
+#2 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php on line 17
+[10-Oct-2026 20:03:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'u976796130_cherry'@'localhost' (using password: YES) in /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php:99
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php(99): mysqli->__construct()
+#1 /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php(83): HookEventDAO->connect()
+#2 /home/u976796130/domains/cerezasanta.com/public_html/api/finance/process-email-queue.php(72): HookEventDAO->__construct()
+#3 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/DAO/HookEventDAO.php on line 99
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 56]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "window_start_time": "1791662903",
+          "quota_location": "global",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "quota_unit": "1/min/{project}/{user}",
+          "service": "gmail.googleapis.com",
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "quota_limit_value": "6000",
+          "consumer": "projects/346523631800"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 57]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "window_start_time": "1791662903",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_limit_value": "6000",
+          "service": "gmail.googleapis.com",
+          "quota_location": "global",
+          "consumer": "projects/346523631800",
+          "quota_metric": "gmail.googleapis.com/total_query_cost"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 58]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "window_start_time": "1791662903",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_location": "global",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "consumer": "projects/346523631800",
+          "service": "gmail.googleapis.com",
+          "quota_limit_value": "6000"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 59]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "window_start_time": "1791662903",
+          "quota_location": "global",
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "service": "gmail.googleapis.com",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_limit_value": "6000",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "consumer": "projects/346523631800"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 60]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_location": "global",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_limit_value": "6000",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "window_start_time": "1791662903",
+          "service": "gmail.googleapis.com",
+          "consumer": "projects/346523631800",
+          "quota_limit": "totalQueryCostPerMinutePerUser"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 61]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "window_start_time": "1791662903",
+          "quota_location": "global",
+          "consumer": "projects/346523631800",
+          "quota_limit_value": "6000",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "service": "gmail.googleapis.com",
+          "quota_limit": "totalQueryCostPerMinutePerUser"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 62]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_limit_value": "6000",
+          "consumer": "projects/346523631800",
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_metric": "gmail.googleapis.com/total_query_cost",
+          "quota_location": "global",
+          "window_start_time": "1791662903",
+          "service": "gmail.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:08:37 UTC] Worker Error [Queue ID 63]: {
+  "error": {
+    "code": 403,
+    "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+    "errors": [
+      {
+        "message": "Quota exceeded for quota metric 'Total Query Cost' and limit 'Units per minute per user' of service 'gmail.googleapis.com' for consumer 'project_number:346523631800'.",
+        "domain": "usageLimits",
+        "reason": "rateLimitExceeded"
+      }
+    ],
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "gmail.googleapis.com",
+          "quota_limit": "totalQueryCostPerMinutePerUser",
+          "quota_unit": "1/min/{project}/{user}",
+          "quota_location": "global",
+          "window_start_time": "1791662903",
+          "quota_limit_value": "6000",
+          "consumer": "projects/346523631800",
+          "quota_metric": "gmail.googleapis.com/total_query_cost"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+[10-Oct-2026 20:16:47 UTC] Worker Error [Queue ID 68]: MySQL server has gone away
+[10-Oct-2026 20:16:53 UTC] Worker Error [Queue ID 69]: MySQL server has gone away
+[10-Oct-2026 20:34:00 UTC] Worker Error [Queue ID 70]: Table 'u976796130_cherry.bank_notifications' doesn't exist
+[10-Oct-2026 20:34:06 UTC] Worker Error [Queue ID 71]: Table 'u976796130_cherry.bank_notifications' doesn't exist
+[10-Oct-2026 20:34:11 UTC] Worker Error [Queue ID 72]: Table 'u976796130_cherry.bank_notifications' doesn't exist
+[10-Oct-2026 20:34:17 UTC] Worker Error [Queue ID 73]: Table 'u976796130_cherry.bank_notifications' doesn't exist
+[10-Oct-2026 20:34:22 UTC] Worker Error [Queue ID 74]: Table 'u976796130_cherry.bank_notifications' doesn't exist
+[10-Oct-2026 20:36:15 UTC] Worker Error [Queue ID 75]: Unknown column 'bank_name' in 'INSERT INTO'
+[10-Oct-2026 20:36:21 UTC] Worker Error [Queue ID 76]: Unknown column 'bank_name' in 'INSERT INTO'
+[10-Oct-2026 20:36:27 UTC] Worker Error [Queue ID 77]: Unknown column 'bank_name' in 'INSERT INTO'
+[10-Oct-2026 20:36:32 UTC] Worker Error [Queue ID 78]: Unknown column 'bank_name' in 'INSERT INTO'
+[10-Oct-2026 20:36:36 UTC] Worker Error [Queue ID 79]: Unknown column 'bank_name' in 'INSERT INTO'
+[10-Oct-2026 20:36:41 UTC] Worker Error [Queue ID 80]: Unknown column 'bank_name' in 'INSERT INTO'
+[19-Oct-2026 00:06:52 UTC] Worker API Error [Queue ID 112]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:52 UTC] Worker API Error [Queue ID 113]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:52 UTC] Worker API Error [Queue ID 114]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:52 UTC] Worker API Error [Queue ID 115]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:53 UTC] Worker API Error [Queue ID 116]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:53 UTC] Worker API Error [Queue ID 117]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:53 UTC] Worker API Error [Queue ID 118]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:54 UTC] Worker API Error [Queue ID 119]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:54 UTC] Worker API Error [Queue ID 120]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:06:54 UTC] Worker API Error [Queue ID 121]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:19 UTC] Worker API Error [Queue ID 122]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:19 UTC] Worker API Error [Queue ID 123]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:19 UTC] Worker API Error [Queue ID 124]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:20 UTC] Worker API Error [Queue ID 125]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:20 UTC] Worker API Error [Queue ID 126]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:20 UTC] Worker API Error [Queue ID 127]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:21 UTC] Worker API Error [Queue ID 128]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:21 UTC] Worker API Error [Queue ID 129]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:21 UTC] Worker API Error [Queue ID 130]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:19:21 UTC] Worker API Error [Queue ID 131]: {
+  "error": "invalid_grant",
+  "error_description": "Token has been expired or revoked."
+}
+[19-Oct-2026 00:55:02 UTC] Worker API Error [Queue ID 158]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 00:55:09 UTC] Worker API Error [Queue ID 159]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 00:55:16 UTC] Worker API Error [Queue ID 160]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 00:55:22 UTC] Worker API Error [Queue ID 161]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 00:55:28 UTC] Worker API Error [Queue ID 162]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:03:25 UTC] Worker API Error [Queue ID 163]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:03:32 UTC] Worker API Error [Queue ID 164]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:03:39 UTC] Worker API Error [Queue ID 165]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:03:45 UTC] Worker API Error [Queue ID 166]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:25:16 UTC] Worker API Error [Queue ID 167]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:25:22 UTC] Worker API Error [Queue ID 168]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:25:29 UTC] Worker API Error [Queue ID 169]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:25:34 UTC] Worker API Error [Queue ID 170]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:28:05 UTC] Worker API Error [Queue ID 171]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:28:10 UTC] Worker API Error [Queue ID 172]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:28:16 UTC] Worker API Error [Queue ID 173]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:28:21 UTC] Worker API Error [Queue ID 174]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:28:25 UTC] Worker API Error [Queue ID 175]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:29:31 UTC] Worker API Error [Queue ID 176]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:29:36 UTC] Worker API Error [Queue ID 177]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:29:41 UTC] Worker API Error [Queue ID 178]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:29:45 UTC] Worker API Error [Queue ID 179]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:29:50 UTC] Worker API Error [Queue ID 180]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:32 UTC] Worker API Error [Queue ID 181]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:36 UTC] Worker API Error [Queue ID 182]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:40 UTC] Worker API Error [Queue ID 183]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:43 UTC] Worker API Error [Queue ID 184]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:47 UTC] Worker API Error [Queue ID 185]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:50 UTC] Worker API Error [Queue ID 186]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:31:53 UTC] Worker API Error [Queue ID 187]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:33:58 UTC] Worker API Error [Queue ID 188]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:01 UTC] Worker API Error [Queue ID 189]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:03 UTC] Worker API Error [Queue ID 190]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:06 UTC] Worker API Error [Queue ID 191]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:08 UTC] Worker API Error [Queue ID 192]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:10 UTC] Worker API Error [Queue ID 193]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:11 UTC] Worker API Error [Queue ID 194]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:13 UTC] Worker API Error [Queue ID 195]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:14 UTC] Worker API Error [Queue ID 196]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:34:16 UTC] Worker API Error [Queue ID 197]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:24 UTC] Worker API Error [Queue ID 198]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:25 UTC] Worker API Error [Queue ID 199]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:26 UTC] Worker API Error [Queue ID 200]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:27 UTC] Worker API Error [Queue ID 201]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:28 UTC] Worker API Error [Queue ID 202]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:29 UTC] Worker API Error [Queue ID 203]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:30 UTC] Worker API Error [Queue ID 204]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:31 UTC] Worker API Error [Queue ID 205]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:32 UTC] Worker API Error [Queue ID 206]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:35:33 UTC] Worker API Error [Queue ID 207]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:20 UTC] Worker API Error [Queue ID 208]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:22 UTC] Worker API Error [Queue ID 209]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:23 UTC] Worker API Error [Queue ID 210]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:24 UTC] Worker API Error [Queue ID 211]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:26 UTC] Worker API Error [Queue ID 212]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:27 UTC] Worker API Error [Queue ID 213]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:28 UTC] Worker API Error [Queue ID 214]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:29 UTC] Worker API Error [Queue ID 215]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:30 UTC] Worker API Error [Queue ID 216]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:31 UTC] Worker API Error [Queue ID 217]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:42 UTC] Worker API Error [Queue ID 218]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:44 UTC] Worker API Error [Queue ID 219]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:47 UTC] Worker API Error [Queue ID 220]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:50 UTC] Worker API Error [Queue ID 221]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:53 UTC] Worker API Error [Queue ID 222]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:55 UTC] Worker API Error [Queue ID 223]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:37:58 UTC] Worker API Error [Queue ID 224]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:31 UTC] Worker API Error [Queue ID 225]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:35 UTC] Worker API Error [Queue ID 226]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:37 UTC] Worker API Error [Queue ID 227]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:39 UTC] Worker API Error [Queue ID 228]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:41 UTC] Worker API Error [Queue ID 229]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:43 UTC] Worker API Error [Queue ID 230]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:44 UTC] Worker API Error [Queue ID 231]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:45 UTC] Worker API Error [Queue ID 232]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:47 UTC] Worker API Error [Queue ID 233]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:48 UTC] Worker API Error [Queue ID 234]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:53 UTC] Worker API Error [Queue ID 235]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:55 UTC] Worker API Error [Queue ID 236]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:56 UTC] Worker API Error [Queue ID 237]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:39:56 UTC] Worker API Error [Queue ID 238]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:00 UTC] Worker API Error [Queue ID 239]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:02 UTC] Worker API Error [Queue ID 240]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:04 UTC] Worker API Error [Queue ID 241]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:06 UTC] Worker API Error [Queue ID 242]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:07 UTC] Worker API Error [Queue ID 243]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:40:09 UTC] Worker API Error [Queue ID 244]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:03 UTC] Worker API Error [Queue ID 245]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:04 UTC] Worker API Error [Queue ID 246]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:06 UTC] Worker API Error [Queue ID 247]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:07 UTC] Worker API Error [Queue ID 248]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:08 UTC] Worker API Error [Queue ID 249]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:09 UTC] Worker API Error [Queue ID 250]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:10 UTC] Worker API Error [Queue ID 251]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:11 UTC] Worker API Error [Queue ID 252]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:12 UTC] Worker API Error [Queue ID 253]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+
+[19-Oct-2026 01:41:12 UTC] Worker API Error [Queue ID 254]: {
+  "error": {
+    "code": 404,
+    "message": "Requested entity was not found.",
+    "errors": [
+      {
+        "message": "Requested entity was not found.",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ],
+    "status": "NOT_FOUND"
+  }
+}
+

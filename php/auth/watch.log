@@ -1,0 +1,20 @@
+[03-Oct-2026 18:15:08 UTC] PHP Warning:  require_once(/home/u976796130/domains/cerezasanta.com/public_html/api/auth/vendor/autoload.php): Failed to open stream: No such file or directory in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php on line 8
+[03-Oct-2026 18:15:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u976796130/domains/cerezasanta.com/public_html/api/auth/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php on line 8
+[03-Oct-2026 18:20:35 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: file "/../credentials.json" does not exist in /home/u976796130/domains/cerezasanta.com/public_html/api/vendor/google/apiclient/src/Client.php:1034
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php(11): Google\Client->setAuthConfig()
+#1 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/vendor/google/apiclient/src/Client.php on line 1034
+[03-Oct-2026 18:21:27 UTC] PHP Warning:  require_once(/home/u976796130/domains/cerezasanta.com/public_html/api/auth../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php on line 8
+[03-Oct-2026 18:21:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u976796130/domains/cerezasanta.com/public_html/api/auth../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php on line 8
+[03-Oct-2026 18:22:50 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: file "/../credentials.json" does not exist in /home/u976796130/domains/cerezasanta.com/public_html/api/vendor/google/apiclient/src/Client.php:1034
+Stack trace:
+#0 /home/u976796130/domains/cerezasanta.com/public_html/api/auth/register-watch.php(11): Google\Client->setAuthConfig()
+#1 {main}
+  thrown in /home/u976796130/domains/cerezasanta.com/public_html/api/vendor/google/apiclient/src/Client.php on line 1034

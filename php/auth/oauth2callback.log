@@ -1,0 +1,4 @@
+[07-Oct-2026 01:26:27 UTC] PHP Deprecated:  Implicit conversion from float 1791941187.387 to int loses precision in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/oauth2callback.php on line 50
+[08-Oct-2026 02:14:47 UTC] OAuth Callback Exception: Google Token Error: Bad Request
+[08-Oct-2026 02:15:06 UTC] PHP Deprecated:  Implicit conversion from float 1792030506.395 to int loses precision in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/oauth2callback.php on line 50
+[19-Oct-2026 00:35:07 UTC] PHP Deprecated:  Implicit conversion from float 1792974907.548 to int loses precision in /home/u976796130/domains/cerezasanta.com/public_html/api/auth/oauth2callback.php on line 50
